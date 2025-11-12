@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wbsite admin</title>
+</head>
+<body>
+    <script language="javascript">
+        var userprofile={
+            username:"CoolUser99",
+            bio:"I Love coding!javascript is Great!!!,"
+        };
+            function cleanUserBio(profile){
+                var cleanedusername=profile.username.trim().toLowerCase();
+                var cleanedbio=profile.bio.trim().toLowerCase();
+                var cleanedbio=cleanedbio.replace("javascript","js");
+                var bioLength=cleanedbio.length;
+                return{
+                    cleanedusername,
+                    cleanedbio,
+                    bioLength,
+                };
+            }
+            var cleanedprofile=cleanUserBio(userprofile);
+            console.log(cleanedprofile);
+        
+
+    </script>
+    
+</body>
+</html>
