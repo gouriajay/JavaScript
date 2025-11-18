@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Reminder Tool</title>
+</head>
+<body>
+    <script language="javascript" type="text/javascript">
+        var dat=new Date(2025-10-18);
+        var dat=new Date();
+        console.log("Year:",dat.getFullYear());
+        var dat=new Date();
+        console.log("Month:",dat.getMonth());
+        var dat=new Date();
+        console.log("Day:",dat.getDate());
+        var today=new Date();
+        var fullyear=today.getFullYear()-dat.getFullYear();
+        console.log("Full year:",fullyear);
+let thisyear =
+    today.getMonth() > dat.getMonth() ||
+    (today.getMonth()== dat.getMonth() && today.getDate() >= dat.getDate());
+
+if (thisyear) {
+    fullyear;
+}
+let message = (fullyear >= 1)
+    ? "It has been more than a year since that date."
+    : "It has been less than a year since that date.";
+    console.log("Message:", message);
+
+       
+
+        
+       
+        
+
+
+
+
+    </script>
+    
+</body>
+</html>
