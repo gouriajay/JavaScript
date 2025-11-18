@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script language="javascript" type="text/javascript">
+        var Products=["Orange","Apple","Pineapple","Kiwi"];
+        var Pprice=[80,95,70,90];
+        var mergelist=[];
+        for(i=0;i<Products.length;i++){
+            mergelist.push('Product:${product[i]}-Price:$[price[i]}]');
+        }
+        console.log("All Product:");
+        for(let item of mergelist){
+            console.log(item);
+        }
+        
+
+    </script>
+    
+</body>
+</html>
