@@ -10,7 +10,7 @@
     <script type="text/javascript">
         function filterComment(comment) {
     var bannedWords = /(bad|ugly|stupid)/gi;
-    var replaceComment = comment.replace(bannedWords, "");
+    var replaceComment = comment.replace(bannedWords, "***");
     var numberCount = (comment.match(/\d+/g)).length;
     var capitalCount = (comment.match(/[A-Z]/g)).length;
     return {
