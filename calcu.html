@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        
+let num1 = parseFloat(prompt("Enter first number:"));
+let num2 = parseFloat(prompt("Enter second number:"));
+
+let operator = prompt("Choose an operator (+, -, *, /):");
+
+let rslt;
+
+if (operator === "+") {
+    rslt = num1 + num2;
+} 
+else if (operator === "-") {
+    rslt = num1 - num2;
+} 
+else if (operator === "*") {
+    rslt = num1 * num2;
+} 
+else if (operator === "/") {
+    rslt= num1 / num2;
+} 
+else {
+    rslt = "Invalid operator!";
+}
+
+console.log("Result: " + rslt);
+
+    </script>
+    
+</body>
+</html>
